@@ -42,7 +42,7 @@ html, body{
 	border: none;
 	outline: none;
 	color: #e07299;
-	padding: 2em 0em;
+	padding: 2.1em 0em;
 	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
@@ -131,58 +131,28 @@ html, body{
 
 .about-desc {
 	line-height: 150%;
-	color: #e07299;
+	color: #68a660;
 	padding-top: 1.5em;
 }
 
-input[type=text] {
-	width: 100%;
-	padding: 0.4em 0.4em;
-	margin: 0.3em 0em;
-	box-sizing: border-box;
-	font-family: 'Source Sans Pro';
-	font-size: 0.8em;
-	color: #8fa384;
-	border: 0.5px solid #bdc9c0;
-} input[type=text]:focus { border: 1px solid #8fa384; }
-
-::placeholder {
-	color: #bdc9c0;
-	opacity: 1; /* Firefox */
-}
-
-textarea {
-	width: 100%;
-	padding: 0.4em 0.4em;
-	margin: 0.3em 0em;
-	box-sizing: border-box;
-	font-family: 'Source Sans Pro';
-	font-size: 0.8em;
-	color: #8fa384;
-	border: 0.5px solid #bdc9c0;
-	height: 10em;
-	resize: none;
-} textarea:focus { border: 1px solid #8fa384; }
-
 .about-contacts {
-	font-size: 0.75em;
 	line-height: 140%;
-	color: #e6b8c8;
+	color: #e07299;
 }
 
 .about-contacts a:link {
 	text-decoration: underline;
-	color: #e6b8c8;
+	color: #e07299;
 }
 
 .about-contacts a:visited {
 	text-decoration: none;
-	color: #e6b8c8;
+	color: #e07299;
 }
 
 .about-contacts a:hover {
 	text-decoration: none;
-	color: #e6b8c8;
+	color: #e07299;
 }
 
 .about-contacts a:active {
