@@ -33,66 +33,83 @@
 		</div>
 
 		<section class="gallery">
-			<div class="container">
-				<div class="grid">
-					<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo">
-						<div class="img-container">
-							<img class="img-gallery" src="images/anna.png" alt="">
-							<div class="img-content">
-								<div class="title">Mobile 1</div>
-								<div class="description">Showcase M1</div>
-							</div>
-							<span class="img-content-hover">
-								<div class="title">Test 1</div>
-								<div class="description">Showcase 1</div>
-							</span>
+			<div class="container grid">
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo"  onclick="openLightbox();toSlide(1)">
+					<div class="img-container">
+						<img class="img-gallery" src="images/anna.png" alt="">
+						<div class="img-content">
+							<div class="title">Mobile 1</div>
+							<div class="description">Showcase M1</div>
 						</div>
+						<span class="img-content-hover">
+							<div class="title">Test 1</div>
+							<div class="description">Showcase 1</div>
+						</span>
 					</div>
-					<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration">
-						<div class="img-container">
-							<img class="img-gallery" src="images/characteristics.png" alt="">
-							<div class="img-content">
-								<div class="title">Mobile 2</div>
-								<div class="description">Showcase M2</div>
-							</div>
-							<span class="img-content-hover">
-								<div class="title">Test 2</div>
-								<div class="description">Showcase 2</div>
-							</span>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration" onclick="openLightbox();toSlide(2)">
+					<div class="img-container">
+						<img class="img-gallery" src="images/characteristics.png" alt="" onclick="openLightbox();toSlide(1)">
+						<div class="img-content">
+							<div class="title">Mobile 2</div>
+							<div class="description">Showcase M2</div>
 						</div>
+						<span class="img-content-hover">
+							<div class="title">Test 2</div>
+							<div class="description">Showcase 2</div>
+						</span>
 					</div>
-					<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo">
-						<div class="img-container">
-							<img class="img-gallery" src="images/legofinish.png" alt="">
-							<div class="img-content">
-								<div class="title">Mobile 3</div>
-								<div class="description">Showcase M3</div>
-							</div>
-							<span class="img-content-hover">
-								<div class="title">Test 3</div>
-								<div class="description">Showcase 3</div>
-							</span>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo" onclick="openLightbox();toSlide(3)">
+					<div class="img-container">
+						<img class="img-gallery" src="images/legofinish.png" alt="">
+						<div class="img-content">
+							<div class="title">Mobile 3</div>
+							<div class="description">Showcase M3</div>
 						</div>
+						<span class="img-content-hover">
+							<div class="title">Test 3</div>
+							<div class="description">Showcase 3</div>
+						</span>
 					</div>
-					<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration">
-						<div class="img-container">
-							<img class="img-gallery" src="images/loopback.png" alt="">
-							<div class="img-content">
-								<div class="title">Mobile 4</div>
-								<div class="description">Showcase M4</div>
-							</div>
-							<span class="img-content-hover">
-								<div class="title">Test 4</div>
-								<div class="description">Showcase 4</div>
-							</span>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration" onclick="openLightbox();toSlide(4)">
+					<div class="img-container">
+						<img class="img-gallery" src="images/loopback.png" alt="">
+						<div class="img-content">
+							<div class="title">Mobile 4</div>
+							<div class="description">Showcase M4</div>
 						</div>
+						<span class="img-content-hover">
+							<div class="title">Test 4</div>
+							<div class="description">Showcase 4</div>
+						</span>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<div id="Lightbox" class="modal">
+			<span class="close pointer" onclick="closeLightbox()">X</span>
+			<div class="modal-content" align="center">
+				<div class="slide" >
+					<img src="images/anna.png" class="image-slide" />
+				</div>
+				<div class="slide">
+					<img src="images/characteristics.png" class="image-slide" />
+				</div>
+				<div class="slide" >
+					<img src="images/legofinish.png" class="image-slide" />
+				</div>
+				<div class="slide">
+					<img src="images/loopback.png" class="image-slide" />
+				</div>
+			</div>
+		</div>
+
 		<script src="script.js"></script>
 		<script src="filter.js"></script>
 		<script src="galleryscript.js"></script>
+		<script src="popup.js"></script>
 	</body>
 </html>
