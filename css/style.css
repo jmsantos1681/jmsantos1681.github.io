@@ -185,9 +185,9 @@ html, body{
 
 .img-gallery {
 	width: 100%;
-	height: 400px;
+	height: auto;
 	object-fit: cover;
-	object-position: 50% 0%;
+	object-position: 50% -33px;
 	transform: scale(1);
 }
 
@@ -218,7 +218,13 @@ html, body{
 .img-container:hover .img-content-hover { display: block; }
 .img-content { display: none; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1919px) {
+	.img-gallery {
+		object-position: 50% 0px;
+	}
+}
+
+@media screen and (max-width: 1023px) {
 	img:hover { transform: none; }
 	.img-container {
 		height: 100%;
@@ -229,7 +235,7 @@ html, body{
 	.img-container:hover .img-content-hover { display: none; }
 	.img-content {
 		display: block;
-		padding: 1em 0em;
+		padding: 0.5em 0em 1.5em 0em;
 	}
 }
 

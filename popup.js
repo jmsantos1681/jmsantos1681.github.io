@@ -9,7 +9,6 @@ function closeLightbox() {
 	document.getElementById('Lightbox').style.display = 'none';
 };
 
-
 function changeSlide(n) {
 	showSlide(slideIndex += n);
 };
@@ -17,6 +16,7 @@ function changeSlide(n) {
 function toSlide(n) {
 	showSlide(slideIndex = n);
 };
+
 
 function showSlide(n) {
 	const slides = document.getElementsByClassName('slide');
