@@ -5,7 +5,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Source Sans Pro|Ubuntu' rel='stylesheet'>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel='stylesheet prefetch' href='https://npmcdn.com/basscss@8.0.0/css/basscss.min.css'>
-		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
 		<script src="jquery.js"></script> 
 	</head>
 	<body id="homepage">
@@ -36,6 +36,124 @@
 		<!--Gallery Section-->
 		<section class="gallery">
 			<div class="container grid">
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration">
+					<a href="https://www.google.com/">
+						<div class="img-container">
+							<img class="img-gallery" src="images/ts/preview.jpg">
+							<div class="img-content">
+								<div class="title">Project Swift</div>
+								<div class="description">Taylor Swift Eras</div>
+							</div>
+							<span class="img-content-hover">
+								<div class="title">Project Swift</div>
+								<div class="description">Taylor Swift Eras</div>
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration">
+					<a href="https://www.google.com/">
+						<div class="img-container">
+							<img class="img-gallery" src="images/afterglow.jpg">
+							<div class="img-content">
+								<div class="title">Afterglow</div>
+								<div class="description">Lyric Video Animation</div>
+							</div>
+							<span class="img-content-hover">
+								<div class="title">Afterglow</div>
+								<div class="description">Lyric Video Animation</div>
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo">
+					<a href="https://www.google.com/">
+						<div class="img-container">
+							<img class="img-gallery" src="images/quickthink.png">
+							<div class="img-content">
+								<div class="title">Quick Think</div>
+								<div class="description">Areté Video Series (ADMU)</div>
+							</div>
+							<span class="img-content-hover">
+								<div class="title">Quick Think</div>
+								<div class="description">Areté Video Series (ADMU)</div>
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration">
+					<a href="https://www.google.com/">
+						<div class="img-container">
+							<img class="img-gallery" src="images/levitating.jpg">
+							<div class="img-content">
+								<div class="title">Levitating</div>
+								<div class="description">Lyric Video Animation</div>
+							</div>
+							<span class="img-content-hover">
+								<div class="title">Levitating</div>
+								<div class="description">Lyric Video Animation</div>
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo">
+					<a href="https://www.google.com/">
+						<div class="img-container">
+							<img class="img-gallery" src="images/icce2018.png">
+							<div class="img-content">
+								<div class="title">ICCE 2018</div>
+								<div class="description">Branding: Conference</div>
+							</div>
+							<span class="img-content-hover">
+								<div class="title">ALLS</div>
+								<div class="description">Branding: Conference</div>
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo">
+					<a href="https://www.google.com/">
+						<div class="img-container">
+							<img class="img-gallery" src="images/alls.png">
+							<div class="img-content">
+								<div class="title">ALLS</div>
+								<div class="description">Branding & Video Series</div>
+							</div>
+							<span class="img-content-hover">
+								<div class="title">ALLS</div>
+								<div class="description">Branding & Video Series</div>
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="logo">
+					<a href="https://www.google.com/">
+						<div class="img-container">
+							<img class="img-gallery" src="images/design11.png">
+							<div class="img-content">
+								<div class="title">Design 11</div>
+								<div class="description">Branding: Architecture</div>
+							</div>
+							<span class="img-content-hover">
+								<div class="title">ALLS</div>
+								<div class="description">Branding: Architecture</div>
+							</span>
+						</div>
+					</a>
+				</div>
+				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration"  onclick="openLightbox();toSlide(31)">
+					<div class="img-container">
+						<img class="img-gallery" src="images/pace.png">
+						<div class="img-content">
+							<div class="title">Pacing</div>
+							<div class="description">Quote Illustration</div>
+						</div>
+						<span class="img-content-hover">
+							<div class="title">Pacing</div>
+							<div class="description">Quote Illustration</div>
+						</span>
+					</div>
+				</div>
 				<div class="images column-xs-12 column-sm-3 column-md-3 column-lg-3" data-class="illustration"  onclick="openLightbox();toSlide(1)">
 					<div class="img-container">
 						<img class="img-gallery" src="images/ps5swift.jpg">
@@ -430,8 +548,8 @@
 		</section>
 
 		<!--Lightbox Section-->
-		<div id="Lightbox" class="modal">
-			<span class="close pointer" onclick="closeLightbox()">X</span>
+		<div id="Lightbox" class="modal" onclick="closeLightbox()">
+			<span class="close pointer" >X</span>
 			<div class="modal-content" align="center" onclick="closeLightbox()">
 				<div class="slide"><img src="images/ps5swift.jpg" class="image-slide" /></div>
 				<div class="slide"><img src="images/owl.png" class="image-slide" /></div>
@@ -463,6 +581,8 @@
 				<div class="slide"><img src="images/blueprint.png" class="image-slide" /></div>
 				<div class="slide"><img src="images/elsa.jpg" class="image-slide" /></div>
 				<div class="slide"><img src="images/anna.png" class="image-slide" /></div>
+				<div class="slide"><img src="images/pace.png" class="image-slide" /></div>
+				<div class="slide"><img src="images/quickthink.png" class="image-slide" /></div>
 			</div>
 		</div>
 

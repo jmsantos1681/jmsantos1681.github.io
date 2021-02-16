@@ -85,7 +85,7 @@ html, body{
 .topnav-right { float: right; }
 .topnav-right a:first-child { padding: 2em 0em; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
 	.topnav-right { display:none; }
 	#aboutpage .work {display: none;}
 	.topnav a:not(:first-child), .dropdown .dropbtn { display: none;}
@@ -132,7 +132,7 @@ html, body{
 	font-family: 'Ubuntu';
 	font-weight: bold;
 	font-size: 2.5em;
-	line-height: 120%;
+	line-height: 135%;
 	color: #68a660;
 }
 
@@ -167,6 +167,24 @@ html, body{
 	color: #e07299;
 }
 
+
+@media screen and (max-width: 1079px) {
+	.about-header  {
+		padding-top: 1em;
+		font-size: 5em;
+		line-height: 150%;
+	}
+
+	.about-desc {
+		padding-top: 5em;
+		font-size: 0.75em;
+	}
+
+	.about-contacts {
+		font-size: 0.75em;
+	}
+}
+
 /*------------*/
 /*--GALLERY---*/
 /*------------*/
@@ -176,7 +194,7 @@ html, body{
 
 .img-container {
 	height: 20em;
-	cursor: default;
+	cursor: pointer;
 	overflow: hidden;
 	&:hover .img-content-hover {
 		display: block;
@@ -187,7 +205,7 @@ html, body{
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	object-position: 50% -33px;
+	object-position: 50% 0px;
 	transform: scale(1);
 }
 
@@ -218,13 +236,13 @@ html, body{
 .img-container:hover .img-content-hover { display: block; }
 .img-content { display: none; }
 
-@media screen and (max-width: 1919px) {
+@media screen and (min-width: 1920px) {
 	.img-gallery {
-		object-position: 50% 0px;
+		object-position: 50% -75px;
 	}
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1079px) {
 	img:hover { transform: none; }
 	.img-container {
 		height: 100%;
@@ -257,8 +275,8 @@ html, body{
 }
 
 .modal-content {
-  position: relative;
-  display: block;
+	position: relative;
+	display: block;
 }
 
 .slide { display: none; }
@@ -278,10 +296,17 @@ html, body{
 	z-index:3;
 } .close:hover, .close:focus { cursor: pointer; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1079px) {
 	.image-slide {
+		margin-top: 10vh;
 		max-width: 95vw;
-		height: auto;
 		max-height: 95vh;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.image-slide {
+		margin-top: 20vh;
 	}
 }
