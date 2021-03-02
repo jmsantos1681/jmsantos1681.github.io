@@ -4,6 +4,10 @@ html, body{
 	line-height: 1.5em;
 }
 
+a{
+	text-decoration: none;
+}
+
 /*------------*/
 /*---NAVBAR---*/
 /*------------*/
@@ -196,28 +200,6 @@ html, body{
 	height: 20em;
 	cursor: pointer;
 	overflow: hidden;
-	&:hover .img-content-hover {
-		display: block;
-	}
-}
-
-.img-gallery {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-	object-position: 50% 0px;
-	transform: scale(1);
-}
-
-.img-content-hover {
-	z-index: 1;
-	position: absolute;
-	top: 0;
-	left: 0;
-	white-space: nowrap;
-	display: none;
-	background: rgba(255,255,255,0.85);
-	padding: 0.75em;
 }
 
 .title {
@@ -233,24 +215,13 @@ html, body{
 	color: #68a660;
 }
 
-.img-container:hover .img-content-hover { display: block; }
 .img-content { display: none; }
-
-@media screen and (min-width: 1920px) {
-	.img-gallery {
-		object-position: 50% -75px;
-	}
-}
 
 @media screen and (max-width: 1079px) {
 	img:hover { transform: none; }
 	.img-container {
 		height: 100%;
-		&:hover .img-content-hover {
-			display: none;
-		}
 	}
-	.img-container:hover .img-content-hover { display: none; }
 	.img-content {
 		display: block;
 		padding: 0.5em 0em 1.5em 0em;
@@ -309,4 +280,88 @@ html, body{
 	.image-slide {
 		margin-top: 20vh;
 	}
+}
+
+/*------------*/
+/*--Test---*/
+/*------------*/
+
+.content {
+	position: relative;
+	overflow: hidden;
+}
+
+.content-image{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: 50% 0px;
+}
+
+.content .content-overlay {
+	background: rgba(26,13,24,0.66);
+	position: absolute;
+	height: auto;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+	opacity: 1;
+}
+
+.content-details {
+	position: absolute;
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+  
+.content:hover .content-details{
+	top: 50%;
+	left: 50%;
+	opacity: 1;
+}
+
+.content-details p{
+	color: #A9F097;
+}
+
+.overlay-title{
+	font-family: 'Ubuntu';
+	font-weight: bold;
+	font-size: 1.25em;
+	color: #A9F097;
+}
+
+.overlay-desc{
+	font-family: 'Source Sans Pro';
+	font-size: 1em;
+	color: #A9F097;
+}
+
+@media screen and (max-width: 1079px) {
+	.content .content-overlay{ display: none; }
+	.content-details{ display: none; }
+}
+
+@media screen and (min-width: 1920px) {
+	.content-image { object-position: 50% -75px; }
 }
