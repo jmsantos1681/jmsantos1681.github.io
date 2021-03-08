@@ -323,8 +323,6 @@ a{
 .content-details {
 	position: absolute;
 	text-align: center;
-	padding-left: 1em;
-	padding-right: 1em;
 	width: 100%;
 	top: 50%;
 	left: 50%;
@@ -352,12 +350,14 @@ a{
 	font-weight: bold;
 	font-size: 1.25em;
 	color: #A9F097;
+	padding: 0 1em;
 }
 
 .overlay-desc{
 	font-family: 'Source Sans Pro';
 	font-size: 1em;
 	color: #A9F097;
+	padding: 0 1em;
 }
 
 @media screen and (max-width: 1079px) {
