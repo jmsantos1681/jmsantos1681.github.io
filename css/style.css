@@ -387,6 +387,14 @@ a{
 	object-position: 50% 0px;
 }
 
+.sub-vid{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	object-position: 50% 0px;
+	padding-bottom: 5em;
+}
+
 .sub-title{
 	font-family: 'Ubuntu';
 	font-weight: bold;
